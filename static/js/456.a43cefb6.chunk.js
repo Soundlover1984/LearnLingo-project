@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunklearnlingo_project=self.webpackChunklearnlingo_project||[]).push([[456],{456:function(n,e,i){i.r(e),i.d(e,{default:function(){return u}});var r,t=function(){},p=i(168),l=i(686).Z.div(r||(r=(0,p.Z)(["\n  margin-top: 88px;\n  flex-direction: column;\n  display: flex;\n  gap: 24px;\n  padding-left: 20px;\n  padding-right: 20px;\n"]))),c=i(184),u=function(){return(0,c.jsx)(l,{children:(0,c.jsx)(t,{})})}}}]);
-//# sourceMappingURL=456.a43cefb6.chunk.js.map
