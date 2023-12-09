@@ -1,12 +1,17 @@
 {
   "files": {
-    "main.css": "/LearnLingo-project/static/css/main.31d6cfe0.css",
-    "main.js": "/LearnLingo-project/static/js/main.a0c0faaf.js",
+    "main.css": "/LearnLingo-project/static/css/main.4a2aca22.css",
+    "main.js": "/LearnLingo-project/static/js/main.76951669.js",
+    "static/js/456.a43cefb6.chunk.js": "/LearnLingo-project/static/js/456.a43cefb6.chunk.js",
+    "static/js/444.3fd4bf29.chunk.js": "/LearnLingo-project/static/js/444.3fd4bf29.chunk.js",
+    "static/js/413.dc1e92e3.chunk.js": "/LearnLingo-project/static/js/413.dc1e92e3.chunk.js",
     "index.html": "/LearnLingo-project/index.html",
-    "main.a0c0faaf.js.map": "/LearnLingo-project/static/js/main.a0c0faaf.js.map"
+    "main.4a2aca22.css.map": "/LearnLingo-project/static/css/main.4a2aca22.css.map",
+    "main.76951669.js.map": "/LearnLingo-project/static/js/main.76951669.js.map",
+    "456.a43cefb6.chunk.js.map": "/LearnLingo-project/static/js/456.a43cefb6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.31d6cfe0.css",
-    "static/js/main.a0c0faaf.js"
+    "static/css/main.4a2aca22.css",
+    "static/js/main.76951669.js"
   ]
 }
