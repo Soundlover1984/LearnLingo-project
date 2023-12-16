@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
-import { mediaSizes } from "constants";
-import { colors } from "constants";
+import { mediaSizes } from "styles/constants/mediaSizes";
+import { colors } from "styles/constants/colors";
 
 export const LoaderStyled = styled.div`
   position: fixed;

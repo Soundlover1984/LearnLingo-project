@@ -5,7 +5,8 @@ import {
     updateProfile,
   } from "firebase/auth";
   import { createAsyncThunk } from "@reduxjs/toolkit";
-  import { auth } from "firebase/firebase";
+  import { auth } from "../../firebase/firebase";
+  
 
   export const registerUser = createAsyncThunk(
     "auth/registerUser",
