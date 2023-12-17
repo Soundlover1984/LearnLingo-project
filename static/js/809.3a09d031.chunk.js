@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunklearnlingo_project=self.webpackChunklearnlingo_project||[]).push([[809],{6809:function(n,r,e){e.r(r),e.d(r,{default:function(){return u}});var i,o=e(168),t=e(7686),c=e(1781),l=t.Z.div(i||(i=(0,o.Z)(["\n  margin-top: 88px;\n  flex-direction: column;\n  display: flex;\n  gap: 24px;\n  padding-left: 20px;\n  padding-right: 20px;\n  background-color: ",";\n"])),c.O.colorLightBG);var p=function(){},a=e(184),u=function(){return(0,a.jsx)(l,{children:(0,a.jsx)(p,{})})}}}]);
+//# sourceMappingURL=809.3a09d031.chunk.js.map
