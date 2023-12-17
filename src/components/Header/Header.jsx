@@ -19,13 +19,14 @@ import { selectUserName } from "../../redux/auth/selectors";
 import { logOut } from "../../redux/auth/authOperations";
 import { useLocation } from "react-router-dom";
 import Container from "components/Container/Container";
+import { selectIsAuth } from "../../redux/auth/selectors";
 
 function Header() {
   const dispatch = useDispatch();
   const login = useSelector(selectUserName);
   const [isLoginModalOpened, setIsLoginModalOpened] = useState(false);
   const [isRegModalOpened, setIsRegModalOpened] = useState(false);
-  const isAuth = useSelector((state) => state.auth.isAuth);
+  const isAuth = useSelector(selectIsAuth);
 
   const location = useLocation();
   const [value, setValue] = useState(getInitialValue(location.pathname));

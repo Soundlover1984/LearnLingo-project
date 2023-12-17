@@ -1,5 +1,6 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { configureStore } from '@reduxjs/toolkit';
 import {
+  persistReducer,
   persistStore,
   FLUSH,
   REHYDRATE,
@@ -7,14 +8,21 @@ import {
   PERSIST,
   PURGE,
   REGISTER,
-} from "redux-persist";
+} from 'redux-persist';
+import { authReducer } from './auth/authSlice.js';
+import storage from 'redux-persist/lib/storage';
+import { teachersReducer } from './teachers/teachersSlice.js';
 
-
-
+const authPersistConfig = {
+  key: 'auth',
+  storage,
+};
 
 export const store = configureStore({
   reducer: {
-      },
+    auth: persistReducer(authPersistConfig, authReducer),
+    teachers: teachersReducer,
+  },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({
       serializableCheck: {
@@ -22,6 +30,5 @@ export const store = configureStore({
       },
     }),
 });
-
 
 export const persistor = persistStore(store);
