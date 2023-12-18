@@ -1,22 +1,24 @@
 {
   "files": {
     "main.css": "/LearnLingo-project/static/css/main.4a2aca22.css",
-    "main.js": "/LearnLingo-project/static/js/main.dfe9da04.js",
+    "main.js": "/LearnLingo-project/static/js/main.1fc08d58.js",
     "static/js/586.d3d76516.chunk.js": "/LearnLingo-project/static/js/586.d3d76516.chunk.js",
-    "static/js/809.3a09d031.chunk.js": "/LearnLingo-project/static/js/809.3a09d031.chunk.js",
+    "static/js/646.9d1d6b1e.chunk.js": "/LearnLingo-project/static/js/646.9d1d6b1e.chunk.js",
     "static/js/413.de2e9bd0.chunk.js": "/LearnLingo-project/static/js/413.de2e9bd0.chunk.js",
+    "static/js/617.b3b71f15.chunk.js": "/LearnLingo-project/static/js/617.b3b71f15.chunk.js",
     "static/media/avatar_curly.png": "/LearnLingo-project/static/media/avatar_curly.2fd2b94902501584b2eb.png",
     "static/media/avatar@2x.png": "/LearnLingo-project/static/media/avatar@2x.557969cfb75309c4a38c.png",
     "static/media/Yellow_mac.svg": "/LearnLingo-project/static/media/Yellow_mac.0e6ef8a4a0582ea3804a50b50b57daf2.svg",
     "index.html": "/LearnLingo-project/index.html",
     "static/media/ukraine_logo.svg": "/LearnLingo-project/static/media/ukraine_logo.d34743a6d4214a7edfd037c74ed2da93.svg",
     "main.4a2aca22.css.map": "/LearnLingo-project/static/css/main.4a2aca22.css.map",
-    "main.dfe9da04.js.map": "/LearnLingo-project/static/js/main.dfe9da04.js.map",
+    "main.1fc08d58.js.map": "/LearnLingo-project/static/js/main.1fc08d58.js.map",
     "586.d3d76516.chunk.js.map": "/LearnLingo-project/static/js/586.d3d76516.chunk.js.map",
-    "809.3a09d031.chunk.js.map": "/LearnLingo-project/static/js/809.3a09d031.chunk.js.map"
+    "646.9d1d6b1e.chunk.js.map": "/LearnLingo-project/static/js/646.9d1d6b1e.chunk.js.map",
+    "617.b3b71f15.chunk.js.map": "/LearnLingo-project/static/js/617.b3b71f15.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4a2aca22.css",
-    "static/js/main.dfe9da04.js"
+    "static/js/main.1fc08d58.js"
   ]
 }
