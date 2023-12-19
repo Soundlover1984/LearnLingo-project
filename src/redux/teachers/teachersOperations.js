@@ -1,15 +1,15 @@
-import { createAsyncThunk } from '@reduxjs/toolkit';
-import { ref, child, get, update } from 'firebase/database';
-import { db } from '../../firebase/firebase';
-import { toast } from 'react-toastify';
+import { createAsyncThunk } from "@reduxjs/toolkit";
+import { ref, child, get, update } from "firebase/database";
+import { db } from "../../firebase/firebase";
+import { toast } from "react-toastify";
 
 export const getAllTeachers = createAsyncThunk(
-  'teachers/getAllTeachers',
+  "teachers/getAllTeachers",
   async (_, thunkAPI) => {
     const dbRef = ref(db);
 
     try {
-      const snapshot = await get(child(dbRef, '/teachers'));
+      const snapshot = await get(child(dbRef, "/teachers"));
 
       if (snapshot.exists()) {
         const data = snapshot.val();
@@ -18,7 +18,7 @@ export const getAllTeachers = createAsyncThunk(
 
         return allTeachers;
       } else {
-        toast.warn('No data available');
+        toast.warn("No data available");
       }
     } catch (error) {
       console.error(error);
@@ -28,7 +28,7 @@ export const getAllTeachers = createAsyncThunk(
 );
 
 export const d = createAsyncThunk(
-  'teachers/removeFromFavTeachers',
+  "teachers/removeFromFavTeachers",
   async (data, thunkAPI) => {
     const dbRef = ref(db);
 
@@ -40,14 +40,14 @@ export const d = createAsyncThunk(
 
       if (teacherFollowers) {
         const renovatedTeacherFollowers = teacherFollowers.filter(
-          value => value !== data.userId
+          (value) => value !== data.userId
         );
         await update(ref(db, data.id), {
           followers: renovatedTeacherFollowers,
         });
         return teacherFollowers;
       } else {
-        toast.warn('No data available');
+        toast.warn("No data available");
         return [];
       }
     } catch (error) {
