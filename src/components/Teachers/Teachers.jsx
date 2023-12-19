@@ -6,13 +6,17 @@ import TeacherCard from 'components/TeacherCard/TeacherCard';
 import { getAllTeachers } from '../../redux/teachers/teachersOperations';
 import Filter from 'components/Filter/Filter';
 import Container from 'components/Container/Container';
+import { selectTeachers } from '../../redux/teachers/selectors';
+import { Loader } from "components/Loader/Loader";
+import { Caption } from "components/Form/Form.styled";
 
 const CARDS_COUNT = 4;
 
 function Teachers() {
   const dispatch = useDispatch();
   const scrollRef = useRef(null);
-  const teachers = useSelector(state => state.teachers.teachers);
+  const teachers = useSelector(selectTeachers);
+  const isLoading = useSelector((state) => state.loading.isLoading);
 
   const [languageFilter, setLanguageFilter] = useState(false);
   const [levelFilter, setLevelFilter] = useState(false);
@@ -20,7 +24,7 @@ function Teachers() {
 
   const [teachersLimit, setTeachersLimit] = useState(CARDS_COUNT);
 
-  const filteredTeachers = teachers?.filter(teacher => {
+  const filteredTeachers = teachers?.filter((teacher) => {
     if (!languageFilter && !levelFilter && !priceFilter) {
       return true;
     }
@@ -39,7 +43,7 @@ function Teachers() {
   }, [dispatch]);
 
   const loadMoreHandle = () => {
-    setTeachersLimit(prevCount => prevCount + CARDS_COUNT);
+    setTeachersLimit((prevCount) => prevCount + CARDS_COUNT);
   };
   const displayedTeachers = filteredTeachers?.slice(0, teachersLimit);
 
@@ -47,19 +51,26 @@ function Teachers() {
     <Container>
       <Filter
         teachers={teachers}
-        setLanguageFilter={data => setLanguageFilter(data)}
-        setLevelFilter={data => setLevelFilter(data)}
-        setPriceFilter={data => setPriceFilter(data)}
+        setLanguageFilter={(data) => setLanguageFilter(data)}
+        setLevelFilter={(data) => setLevelFilter(data)}
+        setPriceFilter={(data) => setPriceFilter(data)}
       />
-      <TeacherStyled>
-        {displayedTeachers?.map(el => (
-          <TeacherCard key={el.id} teacher={el} levelFilter={levelFilter} />
-        ))}
-      </TeacherStyled>
-      <Button onClick={loadMoreHandle} className="loadMore">
-        Load more
-      </Button>
-      <div ref={scrollRef} style={{ marginTop: '40px' }}></div>
+      {isLoading?(<Loader/>):(<TeacherStyled>
+        {displayedTeachers?.length > 0 ? (
+          displayedTeachers?.map((el) => (
+            <TeacherCard key={el.id} teacher={el} levelFilter={levelFilter} />
+          ))
+        ) : (
+          <Caption>Unfortunately, no teacher was found.</Caption>
+        )}
+      </TeacherStyled>)}
+      {filteredTeachers?.length > CARDS_COUNT && (
+        <Button onClick={loadMoreHandle} className="loadMore">
+          Load more
+        </Button>
+      )}
+
+      <div ref={scrollRef} style={{ marginTop: "40px" }}></div>
     </Container>
   );
 }
