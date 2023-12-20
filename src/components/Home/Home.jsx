@@ -9,7 +9,7 @@ import {
 } from "./Home.styled";
 import imageFace from "images/avatar_curly.png";
 import imageMac from "images/Yellow_mac.svg";
-import BottomInfo from "components/BottomBar/BottomBar";
+import BottomBar from "components/BottomBar/BottomBar";
 import Container from "components/Container/Container";
 
 function Home() {
@@ -34,7 +34,7 @@ function Home() {
           <MacImgStyled src={`${imageMac}`} />
         </ImgThumbStyled>
       </HomeStyled>
-      <BottomInfo />
+      <BottomBar />
     </Container>
   );
 }

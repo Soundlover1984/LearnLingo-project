@@ -9,6 +9,7 @@ import Container from 'components/Container/Container';
 import { selectTeachers } from '../../redux/teachers/selectors';
 import { Loader } from "components/Loader/Loader";
 import { Caption } from "components/Form/Form.styled";
+import { selectIsLoading } from '../../redux/loader/selectors';
 
 const CARDS_COUNT = 4;
 
@@ -16,7 +17,7 @@ function Teachers() {
   const dispatch = useDispatch();
   const scrollRef = useRef(null);
   const teachers = useSelector(selectTeachers);
-  const isLoading = useSelector((state) => state.loading.isLoading);
+  const isLoading = useSelector(selectIsLoading);
 
   const [languageFilter, setLanguageFilter] = useState(false);
   const [levelFilter, setLevelFilter] = useState(false);
