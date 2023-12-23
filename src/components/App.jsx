@@ -1,9 +1,12 @@
 import { AppStyled } from "./App.styled";
-import { lazy} from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { lazy, useEffect} from "react";
 import { Route, Routes } from "react-router-dom";
 import SharedLayout from "components/SharedLayout/SharedLayout";
 import { Toaster } from "react-hot-toast";
 import { PrivateRoute } from "routes/PrivateRoute";
+import { selectUserId } from "../redux/auth/selectors";
+import { getFavTeachers } from "../redux/user/userOperations";
 
 
 const HomePage = lazy(() => import("pages/HomePage/HomePage"));
@@ -11,6 +14,13 @@ const CardsPage = lazy(() => import("pages/CardsPage/CardsPage"));
 const FavoritesPage = lazy(() => import("pages/FavoritesPage/FavoritesPage"));
 
 function App() {
+
+  const dispatch = useDispatch();
+  const userId = useSelector(selectUserId);
+  useEffect(() => {
+    dispatch(getFavTeachers(userId));
+  }, [dispatch, userId]);
+
 
   return (
     <>
