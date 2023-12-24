@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/LearnLingo-project/static/css/main.4a2aca22.css",
-    "main.js": "/LearnLingo-project/static/js/main.6efd065d.js",
+    "main.js": "/LearnLingo-project/static/js/main.628ff6d6.js",
     "static/js/586.d3d76516.chunk.js": "/LearnLingo-project/static/js/586.d3d76516.chunk.js",
     "static/js/684.213abe6d.chunk.js": "/LearnLingo-project/static/js/684.213abe6d.chunk.js",
-    "static/js/707.e14e3686.chunk.js": "/LearnLingo-project/static/js/707.e14e3686.chunk.js",
+    "static/js/707.c7791179.chunk.js": "/LearnLingo-project/static/js/707.c7791179.chunk.js",
     "static/js/617.b3b71f15.chunk.js": "/LearnLingo-project/static/js/617.b3b71f15.chunk.js",
     "static/js/151.440b624c.chunk.js": "/LearnLingo-project/static/js/151.440b624c.chunk.js",
     "static/media/avatar_curly.png": "/LearnLingo-project/static/media/avatar_curly.2fd2b94902501584b2eb.png",
@@ -13,15 +13,15 @@
     "index.html": "/LearnLingo-project/index.html",
     "static/media/ukraine_logo.svg": "/LearnLingo-project/static/media/ukraine_logo.d34743a6d4214a7edfd037c74ed2da93.svg",
     "main.4a2aca22.css.map": "/LearnLingo-project/static/css/main.4a2aca22.css.map",
-    "main.6efd065d.js.map": "/LearnLingo-project/static/js/main.6efd065d.js.map",
+    "main.628ff6d6.js.map": "/LearnLingo-project/static/js/main.628ff6d6.js.map",
     "586.d3d76516.chunk.js.map": "/LearnLingo-project/static/js/586.d3d76516.chunk.js.map",
     "684.213abe6d.chunk.js.map": "/LearnLingo-project/static/js/684.213abe6d.chunk.js.map",
-    "707.e14e3686.chunk.js.map": "/LearnLingo-project/static/js/707.e14e3686.chunk.js.map",
+    "707.c7791179.chunk.js.map": "/LearnLingo-project/static/js/707.c7791179.chunk.js.map",
     "617.b3b71f15.chunk.js.map": "/LearnLingo-project/static/js/617.b3b71f15.chunk.js.map",
     "151.440b624c.chunk.js.map": "/LearnLingo-project/static/js/151.440b624c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4a2aca22.css",
-    "static/js/main.6efd065d.js"
+    "static/js/main.628ff6d6.js"
   ]
 }
