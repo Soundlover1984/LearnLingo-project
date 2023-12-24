@@ -3,17 +3,17 @@ import { colors } from "styles/constants/colors";
 import { mediaSizes } from "styles/constants/mediaSizes";
 import { ishidden, transition } from "helpers/mixins";
 
-const headerHeight = "88px";
+const headerHeight = '88px';
 
 export const ModalStyled = styled.div`
   position: fixed;
-  z-index: 300;
+  z-index: 20;
   top: ${headerHeight};
   left: 0;
   width: 100%;
-  height: 100vh;
+  max-height: calc(100% - ${headerHeight});
   opacity: 1;
-  ${transition("visible")};
+  ${transition('visible')};
 
   @media screen and (min-width: ${mediaSizes.tablet}) {
     height: 100%;
@@ -27,7 +27,7 @@ export const ModalStyled = styled.div`
 
     & .inner {
       transform: scale(0.7);
-      ${transition("transform")};
+      ${transition('transform')};
     }
   }
 
@@ -40,7 +40,6 @@ export const ModalStyled = styled.div`
     overflow-y: auto;
     &::-webkit-scrollbar {
       width: 8px;
-
     }
     &::-webkit-scrollbar-thumb {
       background-color: ${colors.colorLightOrange};
@@ -66,7 +65,7 @@ export const ModalStyled = styled.div`
     border-radius: 30px;
     height: 100%;
     transform: scale(1);
-    ${transition("transform")};
+    ${transition('transform')};
     overflow: hidden;
     padding: 80px 40px;
     background-color: #ffffff;

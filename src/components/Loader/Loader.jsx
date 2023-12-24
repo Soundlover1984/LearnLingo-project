@@ -1,6 +1,5 @@
 import {
     LoaderContainer,
-    LoaderSmallStyled,
     LoaderStyled,
   } from './Loader.styled';
   
@@ -14,13 +13,5 @@ import {
           </div>
         </LoaderContainer>
       </LoaderStyled>
-    );
-  };
-  
-  export const LoaderSmall = ({ scale, name, top = '0px', left = '50%' }) => {
-    return (
-      <LoaderSmallStyled className={name} scale={scale} top={top} left={left}>
-        <div></div>
-      </LoaderSmallStyled>
     );
   };

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Button } from 'components/Button/Button.styled';
-import { TeacherStyled } from './Teachers.styled';
+import { TeachersStyled } from './Teachers.styled';
 import TeacherCard from 'components/TeacherCard/TeacherCard';
 import { getAllTeachers } from '../../redux/teachers/teachersOperations';
 import Filter from 'components/Filter/Filter';
@@ -56,7 +56,7 @@ function Teachers() {
         setLevelFilter={(data) => setLevelFilter(data)}
         setPriceFilter={(data) => setPriceFilter(data)}
       />
-      {isLoading?(<Loader/>):(<TeacherStyled>
+      {isLoading?(<Loader/>):(<TeachersStyled>
         {displayedTeachers?.length > 0 ? (
           displayedTeachers?.map((el) => (
             <TeacherCard key={el.id} teacher={el} levelFilter={levelFilter} />
@@ -64,7 +64,7 @@ function Teachers() {
         ) : (
           <Caption>Unfortunately, no teacher was found.</Caption>
         )}
-      </TeacherStyled>)}
+      </TeachersStyled>)}
       {filteredTeachers?.length > CARDS_COUNT && (
         <Button onClick={loadMoreHandle} className="loadMore">
           Load more

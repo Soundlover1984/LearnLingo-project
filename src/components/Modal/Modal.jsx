@@ -6,7 +6,6 @@ import { useEffect } from 'react';
 const modalRoot = document.querySelector('#modal-root');
 
 const Modal = ({ active = false, setActive, children }) => {
-
   useEffect(() => {
     window.addEventListener('keydown', handleCloseModal);
 
@@ -43,8 +42,8 @@ const Modal = ({ active = false, setActive, children }) => {
     >
       <div className="modal">
         <div className="inner">
-          <button type="button" className="close" onClick={closeModal} >
-              <IoMdClose size={28}/>
+          <button type="button" className="close" onClick={closeModal}>
+            <IoMdClose size={28} />
           </button>
           {children}
         </div>
