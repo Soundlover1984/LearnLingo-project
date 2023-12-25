@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const HomePageStyled = styled.div`
-  margin-top: 88px;
+  margin-top: 112px;
   flex-direction: column;
   display: flex;
   gap: 24px;
