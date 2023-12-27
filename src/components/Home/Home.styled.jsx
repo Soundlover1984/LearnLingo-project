@@ -74,7 +74,6 @@ export const MacImgStyled = styled.img`
   @media screen and (max-width: ${mediaSizes.tablet}) {
     width: 250px;
   }
-
 `;
 
 export const Text = styled.div`
@@ -100,18 +99,17 @@ export const Text = styled.div`
     @media screen and (min-width: ${mediaSizes.desctop}) {
       max-width: 471px;
     }
-    
   }
   & span {
     color: ${colors.colorText};
-  font-size: 48px;
-  font-style: italic;
-  font-weight: 400;
-  line-height: 56px;
-  letter-spacing: -0.96px;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0.96px;
 
-  border-radius: 16px;
-  background-color: ${colors.colorLightOrange};
+    border-radius: 16px;
+    background-color: ${colors.colorLightOrange};
   }
 `;
 
@@ -137,7 +135,7 @@ export const CountTextStyled = styled.p`
   color: ${colors.colorText};
   font-size: 28px;
   font-weight: 500;
-  line-height: 1.14; /* 114.286% */
+  line-height: 1.14; 
   letter-spacing: -0.56px;
 `;
 
@@ -153,14 +151,14 @@ export const TextStyled = styled.p`
 export const User = styled(NavLink)`
   width: 80px;
   height: 80px;
-  background: url(${({ img }) => img || avatar}) center ${colors.color3};
+  background: url(${({ img }) => img || avatar}) center ${colors.colorPurple};
   background-size: cover;
   border-radius: 50%;
   border: 3px solid #fff;
   box-shadow: 12px 12px 5px -5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transform: rotate(${({ id }) => Math.round(Math.random() * 10 - id) * 3}deg);
-  ${transition("transform", "box-shadow")};
+  ${transition('transform', 'box-shadow')};
 
   &:hover {
     transform: scale(1.1);
