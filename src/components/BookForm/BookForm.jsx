@@ -37,7 +37,6 @@ import {
   
     const handleSubmit = (values, { resetForm }) => {
       const request = { ...values, teacherId: id };
-      console.log(request);
       setIsBookModalOpened(false);
       resetForm();
       return request;

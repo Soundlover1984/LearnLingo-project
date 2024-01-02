@@ -84,7 +84,7 @@ export const Text = styled.div`
   & h1 {
     color: ${colors.colorText};
     width: 100%;
-    @media screen and (min-width: ${mediaSizes.desctop}) {
+    @media screen and (min-width: ${mediaSizes.desktop}) {
       max-width: 548px;
     }
   }
@@ -96,7 +96,7 @@ export const Text = styled.div`
     line-height: 1.38;
     letter-spacing: -0.32px;
     width: 100%;
-    @media screen and (min-width: ${mediaSizes.desctop}) {
+    @media screen and (min-width: ${mediaSizes.desktop}) {
       max-width: 471px;
     }
   }
