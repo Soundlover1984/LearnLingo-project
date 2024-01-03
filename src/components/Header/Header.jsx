@@ -52,7 +52,7 @@ function Header() {
   }
 
   const clickHandler = useCallback(() => {
-    setIsMobileMenuOpen(state => !state);
+    setIsMobileMenuOpen((state) => !state);
   }, []);
 
   useEffect(() => {

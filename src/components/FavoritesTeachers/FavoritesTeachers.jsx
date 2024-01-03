@@ -66,7 +66,7 @@ function FavoritesTeachers() {
           <Caption>Unfortunately, no teacher was found.</Caption>
         )}
       </FavoritesTeachersStyled>
-      {displayedTeachers?.length > CARDS_COUNT && (
+      {filteredTeachersOnSelect?.length > CARDS_COUNT && (
         <Button onClick={loadMoreHandle} className="loadMore">
           Load more
         </Button>

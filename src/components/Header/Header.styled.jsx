@@ -22,6 +22,7 @@ export const HeaderWrapper = styled.div`
   align-items: center;
   padding-top: 30px;
   padding-bottom: 20px;
+
   background-color: ${colors.colorWhite};
 `;
 
@@ -30,6 +31,10 @@ export const HeaderLinksBox = styled.nav`
   justify-content: space-between;
   align-items: center;
   gap: 16px;
+  &.mobile {
+    color: ${colors.colorWhite};
+    flex-direction: column;
+  }
 `;
 
 export const LinkStyled = styled(NavLink)`
@@ -38,18 +43,20 @@ export const LinkStyled = styled(NavLink)`
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+
   &.activeLink {
     color: ${colors.colorOrange};
     &::after {
-      content: "";
+      content: '';
       display: block;
       background-color: ${colors.colorOrange};
       width: 100%;
       height: 1px;
     }
   }
+
   &::after {
-    content: "";
+    content: '';
     display: block;
     background-color: ${colors.colorOrange};
     width: 0%;
@@ -60,11 +67,12 @@ export const LinkStyled = styled(NavLink)`
   &:hover {
     color: ${colors.colorOrange};
   }
+
   &:hover,
   &:focus {
     font-weight: 500;
     &::after {
-      content: "";
+      content: '';
       display: block;
       background-color: ${colors.colorOrange};
       width: 100%;
@@ -79,6 +87,9 @@ export const LogInIcon = styled(FiLogIn)`
   color: ${colors.colorOrange};
   margin-right: 8px;
   cursor: pointer;
+  &.mobile {
+    stroke: ${colors.colorWhite};
+  }
 `;
 
 export const LogOutIcon = styled(FiLogOut)`
@@ -87,6 +98,9 @@ export const LogOutIcon = styled(FiLogOut)`
   color: ${colors.colorOrange};
   margin-right: 8px;
   cursor: pointer;
+  &.mobile {
+    stroke: ${colors.colorWhite};
+  }
 `;
 
 export const HelloStyled = styled.p`
@@ -94,6 +108,9 @@ export const HelloStyled = styled.p`
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
+  &.mobile {
+    color: ${colors.colorWhite};
+  }
 `;
 
 export const LogInBtn = styled.button`
@@ -105,10 +122,15 @@ export const LogInBtn = styled.button`
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
+
   cursor: pointer;
+
   transition: color 300ms ease-in-out;
   &:hover {
     color: ${colors.colorOrange};
+  }
+  &.mobile {
+    color: ${colors.colorWhite};
   }
 `;
 
@@ -123,16 +145,18 @@ export const RegistrationBtn = styled.button`
   background: ${colors.colorBlack};
   box-shadow: 0px 3.44px 3.44px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+
   color: ${colors.colorWhite};
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
-  ${transition("opacity", "background-color")};
+
+  ${transition('opacity', 'background-color')};
+
   &:hover {
     opacity: 0.8;
   }
 `;
-
 export const MenuButton = styled.button`
   border: none;
   padding: 10px;
@@ -144,6 +168,7 @@ export const MenuButton = styled.button`
 export const Icon = styled.svg`
   width: 12px;
   height: 12px;
+
   @media screen and (min-width: ${mediaSizes.mobile}) {
     width: 14px;
     height: 14px;
