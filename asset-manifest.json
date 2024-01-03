@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/LearnLingo-project/static/css/main.4a2aca22.css",
-    "main.js": "/LearnLingo-project/static/js/main.edf6cec3.js",
+    "main.js": "/LearnLingo-project/static/js/main.a8fdeb08.js",
     "static/js/586.9d2ff938.chunk.js": "/LearnLingo-project/static/js/586.9d2ff938.chunk.js",
     "static/js/684.f8ae4106.chunk.js": "/LearnLingo-project/static/js/684.f8ae4106.chunk.js",
-    "static/js/707.e260993c.chunk.js": "/LearnLingo-project/static/js/707.e260993c.chunk.js",
+    "static/js/707.b9342825.chunk.js": "/LearnLingo-project/static/js/707.b9342825.chunk.js",
     "static/js/617.b3b71f15.chunk.js": "/LearnLingo-project/static/js/617.b3b71f15.chunk.js",
     "static/js/151.ab9deafb.chunk.js": "/LearnLingo-project/static/js/151.ab9deafb.chunk.js",
     "static/media/avatar_curly.png": "/LearnLingo-project/static/media/avatar_curly.2fd2b94902501584b2eb.png",
@@ -13,15 +13,15 @@
     "index.html": "/LearnLingo-project/index.html",
     "static/media/ukraine_logo.svg": "/LearnLingo-project/static/media/ukraine_logo.d34743a6d4214a7edfd037c74ed2da93.svg",
     "main.4a2aca22.css.map": "/LearnLingo-project/static/css/main.4a2aca22.css.map",
-    "main.edf6cec3.js.map": "/LearnLingo-project/static/js/main.edf6cec3.js.map",
+    "main.a8fdeb08.js.map": "/LearnLingo-project/static/js/main.a8fdeb08.js.map",
     "586.9d2ff938.chunk.js.map": "/LearnLingo-project/static/js/586.9d2ff938.chunk.js.map",
     "684.f8ae4106.chunk.js.map": "/LearnLingo-project/static/js/684.f8ae4106.chunk.js.map",
-    "707.e260993c.chunk.js.map": "/LearnLingo-project/static/js/707.e260993c.chunk.js.map",
+    "707.b9342825.chunk.js.map": "/LearnLingo-project/static/js/707.b9342825.chunk.js.map",
     "617.b3b71f15.chunk.js.map": "/LearnLingo-project/static/js/617.b3b71f15.chunk.js.map",
     "151.ab9deafb.chunk.js.map": "/LearnLingo-project/static/js/151.ab9deafb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4a2aca22.css",
-    "static/js/main.edf6cec3.js"
+    "static/js/main.a8fdeb08.js"
   ]
 }
