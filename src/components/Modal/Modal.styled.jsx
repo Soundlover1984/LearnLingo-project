@@ -7,11 +7,11 @@ const headerHeight = '88px';
 
 export const ModalStyled = styled.div`
   position: fixed;
-  z-index: 20;
+  z-index: 400;
   top: ${headerHeight};
   left: 0;
   width: 100%;
-  max-height: calc(100% - ${headerHeight});
+  height: 100vh;
   opacity: 1;
   ${transition('visible')};
 

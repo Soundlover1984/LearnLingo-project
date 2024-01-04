@@ -4,6 +4,8 @@ import { mediaSizes } from 'styles/constants/mediaSizes';
 import { colors } from 'styles/constants/colors';
 
 export const Menu = styled.div`
+  height: 100vh;
+  width: 100vw;
   position: fixed;
   left: 0;
   top: 80px;

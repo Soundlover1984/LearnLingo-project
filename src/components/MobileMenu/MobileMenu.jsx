@@ -9,6 +9,7 @@ import {
 import { Menu, Link, List } from './MobileMenu.styled.jsx';
 import { useDispatch, useSelector } from 'react-redux';
 import { logOut } from '../../redux/auth/authOperations.js';
+import { selectIsAuth } from '../../redux/auth/selectors.js';
 
 const MobileMenu = ({
   handleClick,
@@ -17,7 +18,7 @@ const MobileMenu = ({
   login,
 }) => {
   const dispatch = useDispatch();
-  const isAuth = useSelector(state => state.auth.isAuth);
+  const isAuth = useSelector(selectIsAuth);
   const logOuthandle = () => {
     dispatch(logOut());
   };

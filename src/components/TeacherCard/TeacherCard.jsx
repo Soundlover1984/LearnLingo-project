@@ -155,7 +155,7 @@ const TeacherCard = ({ teacher, levelFilter }) => {
                         <FBAuthorName>{el.reviewer_name}</FBAuthorName>
                         <span>
                           <StarStyled />
-                          {el.reviewer_rating}
+                          {el.reviewer_rating}.0
                         </span>
                       </FBAuthor>
                     </FBThumb>
@@ -168,12 +168,6 @@ const TeacherCard = ({ teacher, levelFilter }) => {
                   Read less
                 </ReadMoreBtn>
               )}
-              <Button
-                onClick={isAuth ? openOrderModal : openPushUpModal}
-                className="orderBtn"
-              >
-                Book trial lesson
-              </Button>
             </>
           )}
           <LevelsList>
@@ -186,6 +180,14 @@ const TeacherCard = ({ teacher, levelFilter }) => {
               </LevelsItem>
             ))}
           </LevelsList>
+          {isReadMore && (
+            <Button
+              onClick={isAuth ? openOrderModal : openPushUpModal}
+              className="orderBtn"
+            >
+              Book trial lesson
+            </Button>
+          )}
         </InfoTeacherWrapper>
       </TeacherCardStyled>
       <Modal active={isBookModalOpened} setActive={setIsBookModalOpened}>
